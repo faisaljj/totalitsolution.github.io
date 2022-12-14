@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit:ital,wght@0,200;1,200&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Paytone+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Staatliches&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="index.js"></script>
+    <title>Total IT Solution</title>
+</head>
+
+<body>
+    <header>
+        <img src="image/tis logo.png" alt="" class="logo">
+        <div class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- main section start here?? -->
+
+    <div id="home" class="home">
+        <div class="content-home">
+            <h2>Total IT Solution</h2>
+            <p>We Provide Wide Range of Service & Provide Best Deals In New & Refubrised Desktops and Laptops And Best
+                Security CCTV System</p>
+        </div>
+        <div class="contact-option">
+            <a href="#"><i class="fa-solid fa-file-invoice"></i> Get Quote</a>
+            <!-- <a href="#">Direction</a> -->
+            <a href="tel:62607-52472"><i class="fa-solid fa-phone"></i> Call Now</a>
+        </div>
+    </div>
+
+    <!-- gallery section start here  -->
+
+    <div id="gallery" class="gallery">
+        <div class="title">
+            <h2>Gallery </h2>
+        </div>
+        <div class="gallery-content">
+            <div class="col-content">
+                <img src="image/goran-ivos-T8LMIN09-mo-unsplash.jpg" alt="">
+                <h5>New Laptop</h5>
+                <a href="newlaptop.html">View More</a>
+            </div>
+
+            <div class="col-content">
+                <img src="image/laptop.jpg" alt="">
+                <h5>Repair Your Laptop</h5>
+                <a href="#">View More</a>
+            </div>
+
+            <div class="col-content">
+                <img src="image/erick-cerritos-i5UV2HpITYA-unsplash.jpg" alt="">
+                <h5>Second Hand Laptop</h5>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- product section start here?/ -->
+
+    <div id="product" class="product">
+        <div class="title">
+            <h2>Our Product</h2>
+        </div>
+        <div class="product-content">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="image/jay-prajapati-Jp6Z2Mp5Sq0-unsplash.jpg" alt=""><p>Learn more</p></div>
+                    <div class="swiper-slide"><img src="image/olivier-collet-JMwCe3w7qKk-unsplash.jpg" alt=""><p>Learn more</p></div>
+                    <div class="swiper-slide"><img src="image/erick-cerritos-i5UV2HpITYA-unsplash.jpg" alt=""><p>Learn more</p></div>
+                    <div class="swiper-slide"><img src="image/erick-cerritos-i5UV2HpITYA-unsplash.jpg" alt=""><p>Learn more</p></div>
+                    <div class="swiper-slide"><img src="image/erick-cerritos-i5UV2HpITYA-unsplash.jpg" alt=""><p>Learn more</p></div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                autoplay: {
+                    delay:3000,
+                    disableOnIntrecaction:false,
+                },
+
+                loop: true,
+
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable:true,
+                },
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
+</body>
+
+</html>
